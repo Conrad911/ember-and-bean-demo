@@ -85,17 +85,29 @@
     <!-- HERO -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media" role="img" aria-label="Sunlit coffee house interior with a latte on a wooden table">
-        <!-- Animated steam + crema sheen, drawn in the hero photo's own coordinate space (see .hero-stage in styles.css) -->
+        <!-- Cup + saucer are separate cut-outs of the photo that slide in on their own and then float; the stage reproduces
+             background-size:cover so they line up with the photo (see .hero-stage in styles.css). Steam sits in a second stage above the colour overlay. -->
         <div class="hero-stage" aria-hidden="true">
-          <div class="cup-fx">
-            <div class="crema"><span class="sheen"></span><span class="ripple"></span></div>
-            <div class="steam">
+          <img class="stage-bg" src="assets/img/hero-clean.webp" alt="" width="1280" height="720" decoding="async">
+          <img class="hero-saucer" src="assets/img/saucer.webp" alt="" width="305" height="122" decoding="async">
+          <div class="hero-cup">
+            <img class="cup-img" src="assets/img/cup.webp" alt="" width="261" height="163" decoding="async">
+            <div class="cup-fx">
+              <div class="crema"><span class="sheen"></span><span class="ripple"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-stage hero-stage-fx" aria-hidden="true">
+          <div class="hero-cup">
+            <div class="cup-fx">
+              <div class="steam">
               <svg width="0" height="0" class="defs"><defs><linearGradient id="steam-grad" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fff3e3" stop-opacity="0"/><stop offset=".22" stop-color="#fff3e3" stop-opacity=".9"/><stop offset=".6" stop-color="#fff3e3" stop-opacity=".45"/><stop offset="1" stop-color="#fff3e3" stop-opacity="0"/></linearGradient></defs></svg>
               <svg class="wisp" viewBox="0 0 40 200" preserveAspectRatio="none"><path d="M20 200 C 8 170, 32 150, 20 120 S 6 70, 22 40 S 30 10, 18 0" /></svg>
               <svg class="wisp" viewBox="0 0 40 200" preserveAspectRatio="none"><path d="M20 200 C 32 172, 10 150, 22 118 S 34 72, 16 44 S 10 12, 24 0" /></svg>
               <svg class="wisp" viewBox="0 0 40 200" preserveAspectRatio="none"><path d="M20 200 C 12 168, 28 146, 16 112 S 30 66, 20 36 S 12 8, 22 0" /></svg>
               <svg class="wisp" viewBox="0 0 40 200" preserveAspectRatio="none"><path d="M20 200 C 28 176, 14 140, 24 110 S 10 64, 22 38 S 32 14, 16 0" /></svg>
               <svg class="wisp" viewBox="0 0 40 200" preserveAspectRatio="none"><path d="M20 200 C 10 160, 30 140, 20 104 S 8 60, 24 30 S 18 6, 20 0" /></svg>
+            </div>
             </div>
           </div>
         </div>

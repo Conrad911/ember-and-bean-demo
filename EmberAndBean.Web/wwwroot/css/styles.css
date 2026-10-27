@@ -75,8 +75,23 @@ p{margin:0 0 1em}
    = 12.8 source pixels. The latte surface in hero.webp is centred at (861,520) px,
    ~178 x 37 px. Everything moves with transform/opacity only. */
 .hero-media{container:hero/size}
-.hero-stage{position:absolute;left:50%;top:50%;width:max(100cqw,177.78cqh);height:max(100cqh,56.25cqw);transform:translate(-50%,-50%);container-type:inline-size;pointer-events:none;z-index:1}
+.hero-stage{position:absolute;left:50%;top:50%;width:max(100cqw,177.78cqh);height:max(100cqh,56.25cqw);transform:translate(-50%,-50%);container-type:inline-size;pointer-events:none;z-index:0}
+.hero-stage-fx{z-index:1}
 .cup-fx{position:absolute;left:67.27cqw;top:40.62cqw;width:0;height:0}
+/* Cup and saucer are separate layers (cut from the photo, clean table behind them). They slide in from opposite sides,
+   then float gently. The steam stage uses the same .hero-cup animation so the steam stays with the cup. */
+.stage-bg{position:absolute;inset:0;width:100%;height:100%}
+.hero-saucer{position:absolute;left:55.7cqw;top:43.98cqw;width:23.83cqw;height:auto;filter:drop-shadow(0 1.1cqw 1.3cqw rgba(24,12,6,.5));
+  animation:saucerIn 1.5s cubic-bezier(.22,.85,.25,1) .25s both,saucerFloat 7s ease-in-out 1.75s infinite;will-change:transform}
+.hero-cup{position:absolute;inset:0;transform-origin:67.5cqw 50cqw;
+  animation:cupIn 1.7s cubic-bezier(.2,.9,.25,1.05) .8s both,cupFloat 6s ease-in-out 2.5s infinite;will-change:transform}
+.cup-img{position:absolute;left:59.14cqw;top:38.52cqw;width:20.39cqw;height:auto;filter:drop-shadow(0 .5cqw .7cqw rgba(24,12,6,.28))}
+.hero-stage-fx .steam{animation:steamIn 1.5s ease-out 2.4s both}
+@keyframes saucerIn{from{opacity:0;transform:translate3d(-42cqw,0,0)}60%{opacity:1}to{opacity:1;transform:none}}
+@keyframes cupIn{from{opacity:0;transform:translate3d(42cqw,-2cqw,0) rotate(5deg)}55%{opacity:1}to{opacity:1;transform:none}}
+@keyframes saucerFloat{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-.45cqw,0) rotate(-.15deg)}}
+@keyframes cupFloat{0%,100%{transform:translate3d(0,0,0) rotate(0)}35%{transform:translate3d(.15cqw,-.9cqw,0) rotate(.35deg)}70%{transform:translate3d(-.1cqw,-.4cqw,0) rotate(-.25deg)}}
+@keyframes steamIn{from{opacity:0}to{opacity:1}}
 .crema{position:absolute;left:-6.85cqw;top:-1.38cqw;width:13.7cqw;height:2.76cqw;border-radius:50%;overflow:hidden;mix-blend-mode:soft-light;opacity:.38}
 .crema .sheen{position:absolute;left:0;top:50%;width:13.7cqw;height:13.7cqw;margin-top:-6.85cqw;border-radius:50%;
   background:radial-gradient(circle at 30% 50%,rgba(255,244,225,.95),rgba(255,244,225,0) 38%),radial-gradient(circle at 75% 40%,rgba(255,236,210,.5),rgba(255,236,210,0) 30%);
