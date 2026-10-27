@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ember &amp; Bean Coffee House | Specialty Coffee &amp; Breakfast in Benoni</title>
+  <meta name="description" content="Ember &amp; Bean is an independent neighbourhood coffee house in Benoni, Gauteng. Small-batch roasted coffee, hearty breakfasts, toasties, rusks and koeksisters. Open 7 days.">
+  <meta name="keywords" content="coffee shop Benoni, cafe Benoni, breakfast Benoni, specialty coffee East Rand, flat white, cappuccino, koeksisters, rusks">
+  <meta name="theme-color" content="#2b1a12">
+  <meta name="robots" content="noindex, nofollow"><!-- Demo site: remove this line for a real client -->
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ember &amp; Bean Coffee House">
+  <meta property="og:title" content="Ember &amp; Bean Coffee House | Benoni">
+  <meta property="og:description" content="Small-batch coffee, slow breakfasts and proper koeksisters in the heart of Benoni.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:locale" content="en_ZA">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero.webp">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Ember & Bean Coffee House",
+    "description": "Independent neighbourhood coffee house in Benoni (fictional demo business).",
+    "image": "assets/img/og-image.jpg",
+    "telephone": "+27 10 000 0000",
+    "email": "hello@emberandbean.example",
+    "servesCuisine": ["Coffee", "Breakfast", "South African"],
+    "priceRange": "R",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "27 Kettle Street, Rynfield",
+      "addressLocality": "Benoni",
+      "addressRegion": "Gauteng",
+      "postalCode": "1501",
+      "addressCountry": "ZA"
+    },
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "06:30", "closes": "16:30"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:30", "closes": "15:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "08:00", "closes": "13:00"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Ember &amp; Bean Coffee House, back to top">
+        <img src="assets/logo-light.svg" alt="Ember &amp; Bean Coffee House" width="216" height="48">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#specials">Specials</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#visit">Visit</a></li>
+          <li><a class="btn btn-sm btn-ember" href="#contact">Book a table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" role="img" aria-label="Sunlit coffee house interior with a latte on a wooden table"></div>
+      <div class="container hero-content">
+        <p class="eyebrow"><span class="open-pill" id="open-status" aria-live="polite">Open 7 days</span> Rynfield, Benoni</p>
+        <h1 id="hero-title">Slow-roasted.<br><em>Warmly</em> poured.</h1>
+        <p class="lead">Your neighbourhood coffee house in Benoni &ndash; small-batch espresso, hearty breakfasts and Ouma-approved koeksisters, served with a proper East Rand welcome.</p>
+        <div class="hero-cta">
+          <a class="btn btn-ember" href="#menu">View the menu</a>
+          <a class="btn btn-ghost" href="#contact">Book a table</a>
+        </div>
+        <ul class="hero-facts" aria-label="Highlights">
+          <li><strong>4.8&#9733;</strong><span>200+ happy regulars</span></li>
+          <li><strong>06:30</strong><span>Open early, weekdays</span></li>
+          <li><strong>Free</strong><span>Wi-Fi &amp; safe parking</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img src="assets/img/pour.webp" alt="Barista pouring steamed milk into a cappuccino" width="900" height="900" loading="lazy">
+          <div class="about-badge"><strong>Est.</strong><span>2019</span></div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="kicker">Our story</p>
+          <h2 id="about-title">A little fire, a lot of good coffee</h2>
+          <p>Ember &amp; Bean started with a second-hand roaster, a borrowed garage and a simple idea: Benoni deserved a coffee spot that felt like a friend&rsquo;s kitchen. Today we roast small batches every week, bake our rusks and koeksisters in-house, and know most of our regulars by their order.</p>
+          <p>We source beans from ethical growers in Ethiopia, Rwanda and Brazil, buy our milk, eggs and bread from Gauteng suppliers, and keep the load-shedding back-up humming so your flat white never misses a beat.</p>
+          <ul class="ticks">
+            <li>Roasted in Benoni, every week</li>
+            <li>Plant-based milks at no extra charge on Mondays</li>
+            <li>Kid- and pet-friendly stoep under the jacarandas</li>
+            <li>Inverter &amp; gas back-up: we stay open through load-shedding</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">The menu</p>
+          <h2 id="menu-title">Something for every kind of morning</h2>
+          <p>All prices in rand, VAT included. Ask about our gluten-free and vegan options.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Menu categories">
+          <button role="tab" id="tab-coffee" aria-controls="panel-coffee" aria-selected="true">Coffee</button>
+          <button role="tab" id="tab-other" aria-controls="panel-other" aria-selected="false" tabindex="-1">Tea &amp; Not-Coffee</button>
+          <button role="tab" id="tab-breakfast" aria-controls="panel-breakfast" aria-selected="false" tabindex="-1">Breakfast</button>
+          <button role="tab" id="tab-light" aria-controls="panel-light" aria-selected="false" tabindex="-1">Toasties &amp; Light Meals</button>
+          <button role="tab" id="tab-bakes" aria-controls="panel-bakes" aria-selected="false" tabindex="-1">Bakes &amp; Treats</button>
+        </div>
+
+        <div class="menu-panels">
+          <div role="tabpanel" id="panel-coffee" aria-labelledby="tab-coffee" class="menu-panel">
+            <img class="panel-img" src="assets/img/flat-white.webp" alt="Flat white with rosetta latte art" width="900" height="675" loading="lazy">
+            <ul class="menu-list">
+              <li><div><h3>Espresso</h3><p>Our house &ldquo;Smoulder&rdquo; blend, chocolatey &amp; bold</p></div><span class="price">R28</span></li>
+              <li><div><h3>Americano</h3><p>Double shot, topped with hot water</p></div><span class="price">R32</span></li>
+              <li><div><h3>Flat White</h3><p>Double ristretto, velvety micro-foam</p></div><span class="price">R38</span></li>
+              <li><div><h3>Cappuccino</h3><p>Regular / large</p></div><span class="price">R34 / R42</span></li>
+              <li><div><h3>Caf&eacute; Latte</h3><p>Regular / large</p></div><span class="price">R36 / R44</span></li>
+              <li><div><h3>Cortado</h3><p>Equal parts espresso &amp; warm milk</p></div><span class="price">R34</span></li>
+              <li><div><h3>Mocha</h3><p>Espresso, Belgian chocolate, steamed milk</p></div><span class="price">R44</span></li>
+              <li><div><h3>Single-Origin Pour-Over</h3><p>Rotating beans &ndash; ask what&rsquo;s on the bar</p></div><span class="price">R45</span></li>
+              <li><div><h3>Iced Ember Latte</h3><p>Cold milk, espresso, a hint of caramel</p></div><span class="price">R46</span></li>
+              <li class="note">Oat, almond or soy milk +R8 &middot; Extra shot +R10 &middot; Decaf available</li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" id="panel-other" aria-labelledby="tab-other" class="menu-panel" hidden>
+            <img class="panel-img" src="assets/img/pourover.webp" alt="Pour-over coffee being brewed with a gooseneck kettle" width="900" height="900" loading="lazy">
+            <ul class="menu-list">
+              <li><div><h3>Red Cappuccino</h3><p>Rooibos espresso with steamed milk</p></div><span class="price">R36</span></li>
+              <li><div><h3>Chai Latte</h3><p>Spiced &amp; sweet, or dirty with a shot (+R10)</p></div><span class="price">R40</span></li>
+              <li><div><h3>Hot Chocolate</h3><p>Proper melted chocolate, marshmallows</p></div><span class="price">R40</span></li>
+              <li><div><h3>Pot of Tea</h3><p>Five Roses, Rooibos, Earl Grey or green</p></div><span class="price">R26</span></li>
+              <li><div><h3>Fresh Orange Juice</h3><p>Squeezed to order</p></div><span class="price">R38</span></li>
+              <li><div><h3>Berry &amp; Banana Smoothie</h3><p>With Greek yoghurt &amp; honey</p></div><span class="price">R52</span></li>
+              <li><div><h3>Milkshake</h3><p>Bar-One, strawberry, vanilla or lime</p></div><span class="price">R48</span></li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" id="panel-breakfast" aria-labelledby="tab-breakfast" class="menu-panel" hidden>
+            <img class="panel-img" src="assets/img/breakfast.webp" alt="Breakfast plate with sourdough, poached eggs, bacon, tomato and avocado" width="900" height="675" loading="lazy">
+            <ul class="menu-list">
+              <li><div><h3>The Ember Breakfast</h3><p>Two eggs, bacon, boerewors, grilled tomato, mushrooms, sourdough</p></div><span class="price">R112</span></li>
+              <li><div><h3>Eggs on Sourdough</h3><p>Poached, fried or scrambled, with avo (+R22)</p></div><span class="price">R62</span></li>
+              <li><div><h3>Eggs Benedict</h3><p>Bacon, smoked salmon (+R35) or spinach</p></div><span class="price">R98</span></li>
+              <li><div><h3>Shakshuka</h3><p>Baked eggs, spiced tomato, feta, toasted ciabatta</p></div><span class="price">R89</span></li>
+              <li><div><h3>Mielie-Meal Porridge</h3><p>Creamy putu-style pap, butter, brown sugar &amp; cream</p></div><span class="price">R48</span></li>
+              <li><div><h3>Granola Bowl</h3><p>House granola, Greek yoghurt, berries, honey</p></div><span class="price">R72</span></li>
+              <li class="note">Breakfast served all day, every day</li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" id="panel-light" aria-labelledby="tab-light" class="menu-panel" hidden>
+            <img class="panel-img" src="assets/img/toastie.webp" alt="Grilled cheese and tomato toastie with side salad" width="900" height="675" loading="lazy">
+            <ul class="menu-list">
+              <li><div><h3>Cheese &amp; Tomato Toastie</h3><p>Mature cheddar, ripe tomato, side salad</p></div><span class="price">R59</span></li>
+              <li><div><h3>Chicken Mayo Toastie</h3><p>Pulled chicken, herb mayo, cheddar</p></div><span class="price">R79</span></li>
+              <li><div><h3>Bacon, Brie &amp; Fig</h3><p>On toasted sourdough</p></div><span class="price">R92</span></li>
+              <li><div><h3>Boerewors Roll</h3><p>Grilled wors, tomato smoor, mustard</p></div><span class="price">R75</span></li>
+              <li><div><h3>Chicken &amp; Avo Wrap</h3><p>Crispy chicken, avo, lettuce, sweet chilli</p></div><span class="price">R86</span></li>
+              <li><div><h3>Harvest Salad</h3><p>Roast butternut, feta, seeds, greens, balsamic</p></div><span class="price">R82</span></li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" id="panel-bakes" aria-labelledby="tab-bakes" class="menu-panel" hidden>
+            <img class="panel-img" src="assets/img/counter.webp" alt="Display counter with croissants, muffins, carrot cake and milk tart" width="900" height="900" loading="lazy">
+            <ul class="menu-list">
+              <li><div><h3>Koeksisters</h3><p>Syrupy, plaited &amp; ice-cold &ndash; two per serving</p></div><span class="price">R28</span></li>
+              <li><div><h3>Buttermilk Rusks</h3><p>Two rusks for dunking / take-home bag of 12</p></div><span class="price">R18 / R85</span></li>
+              <li><div><h3>Melktert</h3><p>Ouma&rsquo;s recipe, cinnamon dusted</p></div><span class="price">R38</span></li>
+              <li><div><h3>Carrot Cake</h3><p>Cream cheese icing, toasted pecans</p></div><span class="price">R52</span></li>
+              <li><div><h3>Butter Croissant</h3><p>Plain, or ham &amp; cheese (+R28)</p></div><span class="price">R32</span></li>
+              <li><div><h3>Muffin of the Day</h3><p>Served warm with butter</p></div><span class="price">R34</span></li>
+              <li><div><h3>Scones</h3><p>Two scones, jam, cream &amp; cheese</p></div><span class="price">R55</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIALS -->
+    <section id="specials" class="section specials" aria-labelledby="specials-title">
+      <div class="container">
+        <header class="section-head light">
+          <p class="kicker">This week&rsquo;s specials</p>
+          <h2 id="specials-title">Little luxuries, honest prices</h2>
+        </header>
+        <div class="cards">
+          <article class="card reveal">
+            <img src="assets/img/breakfast.webp" alt="Full breakfast with a cappuccino" width="900" height="675" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Mon &ndash; Fri, till 10:00</span>
+              <h3>Early Bird Combo</h3>
+              <p>Eggs on sourdough with bacon &amp; any regular coffee. The best way to beat the N12 traffic.</p>
+              <p class="card-price">R79</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="assets/img/rusks.webp" alt="Buttermilk rusks next to a mug of coffee" width="900" height="675" loading="lazy">
+            <div class="card-body">
+              <span class="tag">All day</span>
+              <h3>Dip &amp; Sip</h3>
+              <p>A filter coffee or Five Roses with two of our buttermilk rusks. Just like at home &ndash; but we wash up.</p>
+              <p class="card-price">R39</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="assets/img/koeksisters.webp" alt="Syrup-glazed koeksisters on an enamel plate" width="900" height="675" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Saturdays</span>
+              <h3>Koeksister Saturday</h3>
+              <p>Buy a dozen koeksisters to take home and we&rsquo;ll pour you a cappuccino on the house.</p>
+              <p class="card-price">R150</p>
+            </div>
+          </article>
+          <article class="card reveal">
+            <img src="assets/img/milktart.webp" alt="Slice of milk tart with a cappuccino" width="900" height="675" loading="lazy">
+            <div class="card-body">
+              <span class="tag">Weekdays, 14:00 &ndash; close</span>
+              <h3>Afternoon Melktert</h3>
+              <p>A generous slice of melktert with a flat white or cappuccino. Your 3 o&rsquo;clock slump, sorted.</p>
+              <p class="card-price">R62</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Gallery</p>
+          <h2 id="gallery-title">Pull up a chair</h2>
+        </header>
+        <div class="gallery-grid">
+          <a href="assets/img/hero.webp" class="g-item g-wide" data-caption="Morning light at the coffee bar"><img src="assets/img/hero.webp" alt="Coffee bar with espresso machine and plants in morning light" width="1280" height="720" loading="lazy"></a>
+          <a href="assets/img/patio.webp" class="g-item g-tall" data-caption="Our stoep under the jacarandas"><img src="assets/img/patio.webp" alt="Outdoor patio with wooden tables under a flowering jacaranda tree" width="900" height="900" loading="lazy"></a>
+          <a href="assets/img/beans.webp" class="g-item" data-caption="Roasted in Benoni every week"><img src="assets/img/beans.webp" alt="Freshly roasted coffee beans in a burlap sack with a scoop" width="900" height="900" loading="lazy"></a>
+          <a href="assets/img/counter.webp" class="g-item" data-caption="Baked fresh every morning"><img src="assets/img/counter.webp" alt="Display counter with croissants, muffins and cakes" width="900" height="900" loading="lazy"></a>
+          <a href="assets/img/pourover.webp" class="g-item" data-caption="Single-origin pour-over"><img src="assets/img/pourover.webp" alt="Pour-over coffee being brewed" width="900" height="900" loading="lazy"></a>
+          <a href="assets/img/koeksisters.webp" class="g-item" data-caption="Koeksisters, the way Ouma made them"><img src="assets/img/koeksisters.webp" alt="Plate of glossy koeksisters" width="900" height="675" loading="lazy"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Kind words</p>
+          <h2 id="reviews-title">What our regulars say</h2>
+          <p class="demo-note">Sample reviews for demonstration purposes.</p>
+        </header>
+        <div class="review-grid">
+          <figure class="review reveal">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote><p>&ldquo;Best flat white on the East Rand, no contest. The staff remember my order and the koeksisters are dangerous.&rdquo;</p></blockquote>
+            <figcaption><strong>Thandi M.</strong> &middot; Rynfield</figcaption>
+          </figure>
+          <figure class="review reveal">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote><p>&ldquo;Our Saturday ritual. Kids love the milkshakes, the dog loves the stoep, and I love that they&rsquo;re open through load-shedding.&rdquo;</p></blockquote>
+            <figcaption><strong>Pieter &amp; Anri V.</strong> &middot; Lakefield</figcaption>
+          </figure>
+          <figure class="review reveal">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote><p>&ldquo;I work remotely from here twice a week. Fast Wi-Fi, plugs at every table and a cheese toastie that hits the spot.&rdquo;</p></blockquote>
+            <figcaption><strong>Sipho K.</strong> &middot; Northmead</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section id="visit" class="section visit" aria-labelledby="visit-title">
+      <div class="container visit-grid">
+        <div class="visit-info reveal">
+          <p class="kicker">Visit us</p>
+          <h2 id="visit-title">Hours &amp; location</h2>
+          <table class="hours">
+            <caption class="sr-only">Opening hours</caption>
+            <tbody>
+              <tr data-days="1,2,3,4,5"><th scope="row">Monday &ndash; Friday</th><td>06:30 &ndash; 16:30</td></tr>
+              <tr data-days="6"><th scope="row">Saturday</th><td>07:30 &ndash; 15:00</td></tr>
+              <tr data-days="0"><th scope="row">Sunday &amp; public holidays</th><td>08:00 &ndash; 13:00</td></tr>
+            </tbody>
+          </table>
+          <address>
+            <strong>Ember &amp; Bean Coffee House</strong><br>
+            27 Kettle Street, Rynfield<br>
+            Benoni, Gauteng, 1501<br>
+            <span class="muted">(fictional demo address)</span>
+          </address>
+          <p class="visit-links">
+            <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Benoni%2C+Gauteng" target="_blank" rel="noopener">Get directions</a>
+            <a class="btn btn-outline" href="tel:+27100000000">Call 010 000 0000</a>
+          </p>
+        </div>
+        <div class="map-wrap reveal">
+          <iframe title="Map showing Benoni, Gauteng" src="https://maps.google.com/maps?q=Benoni%2C%20Gauteng%2C%20South%20Africa&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="kicker">Book or order</p>
+          <h2 id="contact-title">Save a table or pre-order for collection</h2>
+          <p>Planning a birthday breakfast, a team meeting or just want your cappuccino waiting? Send us a message and we&rsquo;ll confirm quickly on WhatsApp.</p>
+          <a class="btn btn-whatsapp" href="https://wa.me/27000000000?text=Hi%20Ember%20%26%20Bean!%20I%27d%20like%20to%20make%20a%20booking." target="_blank" rel="noopener">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.4-.3z"/></svg>
+            Chat on WhatsApp
+          </a>
+          <ul class="contact-list">
+            <li><span>Phone</span><a href="tel:+27100000000">010 000 0000</a></li>
+            <li><span>Email</span><a href="mailto:hello@emberandbean.example">hello@emberandbean.example</a></li>
+            <li><span>WhatsApp</span><a href="https://wa.me/27000000000" target="_blank" rel="noopener">+27 00 000 0000</a></li>
+          </ul>
+        </div>
+
+        <form class="enquiry" id="enquiry-form" novalidate>
+          <h3>Enquiry form</h3>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="e.g. 082 000 0000" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-type">I&rsquo;d like to</label>
+            <select id="f-type" name="type">
+              <option>Book a table</option>
+              <option>Pre-order for collection</option>
+              <option>Enquire about a function or event</option>
+              <option>Order rusks or koeksisters in bulk</option>
+            </select>
+          </div>
+          <div class="field-row three">
+            <div class="field">
+              <label for="f-date">Date</label>
+              <input id="f-date" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="f-time">Time</label>
+              <input id="f-time" name="time" type="time" min="06:30" max="16:30" required>
+            </div>
+            <div class="field">
+              <label for="f-guests">Guests</label>
+              <input id="f-guests" name="guests" type="number" min="1" max="40" value="2">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-msg">Order or message <span class="muted">(optional)</span></label>
+            <textarea id="f-msg" name="message" rows="3" placeholder="e.g. 2 flat whites and a dozen koeksisters to collect at 08:00"></textarea>
+          </div>
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-whatsapp" data-channel="whatsapp">Send via WhatsApp</button>
+            <button type="submit" class="btn btn-outline" data-channel="email">Send via email</button>
+          </div>
+          <p class="form-hint muted">No data is stored on this site &ndash; your message opens in WhatsApp or your email app.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/logo-light.svg" alt="Ember &amp; Bean Coffee House" width="216" height="48" class="footer-logo">
+        <p class="muted">Slow-roasted. Warmly poured.<br>Proudly local in Benoni, Gauteng.</p>
+      </div>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#specials">Specials</a></li>
+          <li><a href="#visit">Hours &amp; Location</a></li>
+          <li><a href="#contact">Book a Table</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p><strong>Open 7 days</strong><br>Mon&ndash;Fri 06:30&ndash;16:30<br>Sat 07:30&ndash;15:00 &middot; Sun 08:00&ndash;13:00</p>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <p>&copy; <span id="year">2026</span> Ember &amp; Bean Coffee House. A fictional business.</p>
+      <p class="credit">Demo site by Conrad Joubert</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/27000000000" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.4-.3z"/></svg>
+  </a>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+    <button class="lightbox-close" aria-label="Close image">&times;</button>
+    <img src="assets/img/hero.webp" alt="">
+    <p class="lightbox-caption"></p>
+  </dialog>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

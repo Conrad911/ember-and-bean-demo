@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" role="img" aria-labelledby="t">
+  <title id="t">Ember &amp; Bean Coffee House</title>
+  <g transform="translate(6 8)">
+    <circle cx="32" cy="32" r="31" fill="#4a2c1d" stroke="#e8893a" stroke-width="1.5"/>
+    <path d="M32 12c7 9 10 15 10 21a10 10 0 0 1-20 0c0-4 2-7 4-10 1 4 3 6 5 6-2-6-1-11 1-17z" fill="#e8893a"/>
+    <ellipse cx="32" cy="46" rx="11" ry="6.5" fill="#f3e6d3"/>
+    <path d="M24 46c4-3 12-3 16 0" stroke="#4a2c1d" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  </g>
+  <text x="82" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" fill="#fffaf3">Ember <tspan fill="#e8893a">&amp;</tspan> Bean</text>
+  <text x="84" y="64" font-family="Helvetica, Arial, sans-serif" font-size="11.5" letter-spacing="4.2" fill="#f3e6d3" opacity=".75">COFFEE HOUSE · BENONI</text>
+</svg>
